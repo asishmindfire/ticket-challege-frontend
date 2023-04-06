@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* text-decoration: none; */
+  /* box-sizing: border-box; */
+}
+
+.container1 {
+  display: flex;
+  width: 95%;
+  /* border: 5px solid red; */
+  /* position: relative; */
+}
+
+main {
+  /* width: 100%; */
+  /* padding: 20px; */
+  /* border: 5px solid blue; */
+  /* position: absolute;
+  top: 70px;
+  left: 70px; */
+
+  width: 86%;
+  /* width: auto; */
+  /* padding: 20px; */
+  position: relative;
+  top: 10px;
+  left: 210px;
+}
+
+.sidebar {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  transition: all 0.5s;
+  position: fixed !important;
+  top: 77px !important;
+  left: 0px;
+  width: 180px;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.link:hover {
+  /* background: lightskyblue; */
+  background: #ffc107;
+  color: #000;
+  transition: all 0.5s;
+}
+
+.active {
+  /* background: lightskyblue; */
+  background: #ffc107;
+  color: #000;
+}
+
+.icon,
+.link_text {
+  font-size: 20px;
+}
+
+
+
+
+
+
+/* Media Query */
+
+@media (max-width: 1030px) {
+  .sidebar {
+    top: 209px !important;
+  }
+
+  /* Full Width Sidebar  */
+  .sidebar-full {
+    width: 200px;
+  }
+  .logo-full {
+    display: block;
+  }
+  .bars-full {
+    margin-left: 50px;
+  }
+  .link_text-full {
+    display: block;
+  }
+
+  /* :root {
+    --sidebar-full-width: 200px;
+    --logo-full-display: block;
+    --bars-full-margin-left: 50px;
+    --link_text-full-display: block;
+  } */
+}
+
+@media (min-width: 990px) and (max-width: 1030px) {
+  .sidebar {
+    top: 77px !important;
+  }
+}
+
+@media (max-width: 770px) {
+   /* Folded Sidebar  */
+   .sidebar-full {
+    width: 50px !important;
+  }
+  .logo-full {
+    display: none !important;
+  }
+  .bars-full {
+    margin-left: 0px !important;
+  }
+  .link_text-full {
+    display: none !important;
+  }
+}
+
+
+.sidebar-manual {
+  width: 200px;
+}
+.logo-manual {
+  display: none;
+}
+.bars-manual {
+  margin-left: 0px;
+}
+.link_text-manual {
+  display: none;
+}
+
+
+
+/* Media Query for main/children */
+
+@media (max-width: 770px) {
+  main {
+    left: 70px;
+  }
+}

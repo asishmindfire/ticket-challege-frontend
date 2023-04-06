@@ -1,0 +1,37 @@
+/* breadcrumbs */
+.breadcrumbs {
+  /* max-width: 500px; */
+  display: inline;
+  background: rgb(248, 246, 246);
+  padding: 8px;
+  /* margin: 10px auto; */
+  /* margin-left: 15px; */
+  font-size: 20px;
+  border-radius: 5px;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: ">";
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  /* color: #ddd; */
+  color: black;
+  /* text-decoration: none; */
+  text-transform: capitalize;
+}
+
+
+/* Media Query */
+
+@media (max-width: 770px) {
+  .breadcrumbs {
+    font-size: 16px;
+  }
+}

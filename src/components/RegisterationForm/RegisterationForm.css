@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Michroma", sans-serif; */
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.designer-font {
+  font-family: "Michroma", sans-serif;
+}
+
+.signup-cover {
+  background-color: white;
+  width: 26em;
+  height: 30em;
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 0 0.188em 1.55em rgb(156, 156, 156);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  border: none;
+  background-color: rgb(229, 226, 226);
+  height: 1.5em;
+  width: 80%;
+  border-radius: 0.25em;
+  text-align: center;
+  padding: 1.5em;
+}
+
+input:focus {
+  outline-color: rgb(32, 177, 255);
+}
+
+.sign-btn {
+  width: 80%;
+  height: 3em;
+  background-color: rgb(32, 177, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sign-btn:hover {
+  transform: scale(1.12);
+}
